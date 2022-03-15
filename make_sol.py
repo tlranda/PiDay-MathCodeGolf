@@ -7,7 +7,7 @@ char_limit = 1024
 req_char="/10**"
 with open('ans.txt', 'w') as f:
   m=char_limit-len(req_char) # Number of characters we have in budget - ALWAYS written characters
-  m-=len(str(m-2)) # Subtract the number of digits it takes to write the power
+  m-=len(str(m-2))-1 # Subtract the number of digits it takes to write the power
   mp.dps=m # Set mpmath to generate this many digits of pi
   x = mp.pi
   c = 1
