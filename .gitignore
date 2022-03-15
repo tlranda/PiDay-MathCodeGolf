@@ -1,3 +1,7 @@
+# Project-Specific ignores
+Solutions/ # Directory to store solutions
+*.sol # solution file (if misplaced)
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
